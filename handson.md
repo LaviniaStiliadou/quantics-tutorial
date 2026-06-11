@@ -3,7 +3,7 @@
 title: Hands-On Session
 layout: default
 navigation_weight: 3
---------------------
+---
 
 
 # Hands-On Tutorial: Low-Code Quantum Application Development — From Visual Modeling to Execution
@@ -29,7 +29,7 @@ The underlying framework consists of three integrated core services:
 Execute the following commands in your terminal to launch the containerized infrastructure:
 
 ```bash
-git clone https://github.com/LaviniaStiliadou/2026-quantics-tutorial.git
+git clone https://github.com/LaviniaStiliadou/2026-quantics.git
 cd docker
 docker-compose up -d
 ```

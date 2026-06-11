@@ -3,7 +3,7 @@
 title: Hands-On Session 2
 layout: default
 navigation_weight: 4
---------------------
+---
 
 
 # Hands-On Tutorial: Low-Code Quantum Application Development — From Visual Modeling to Execution
