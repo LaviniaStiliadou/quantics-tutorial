@@ -15,29 +15,43 @@ This website hosts the official material for the tutorial **Low-Code Quantum App
 
 ## Abstract
 
-Quantum applications are inherently hybrid systems, requiring tight integration between classical control software and quantum processing units. However, current quantum software engineering practices are often constrained by low-level, circuit-centric development paradigms, which limit accessibility and scalability.
+Quantum application development remains a complex and highly specialized task. Developers must not only understand quantum algorithms but also implement them using provider-specific SDKs, quantum programming languages, and execution environments. As the quantum ecosystem continues to diversify, maintaining and porting applications across different platforms introduces significant engineering overhead.
 
-This tutorial introduces **Qonstruct**, a low-code, model-driven development environment for quantum applications. Qonstruct decouples quantum application logic from hardware-specific circuit representations by enabling visual specification of quantum algorithms and automatic compilation into executable quantum circuits.
+This tutorial introduces Qonstruct, a low-code development environment that aims to accelerate quantum application engineering by raising the level of abstraction above individual SDKs and circuit representations. Instead of manually implementing quantum programs in frameworks such as Qiskit, Braket, or other provider-specific toolchains, developers can visually model quantum applications and automatically generate executable artifacts.
 
-Participants will explore how model-driven engineering principles, visual programming abstractions, and automated transformation pipelines can be applied to quantum software development. The toolchain supports end-to-end workflows including model specification, transformation into OpenQASM3, validation, and execution across heterogeneous quantum backends via a middleware orchestration layer.
+Participants will learn how low-code techniques can be applied to quantum software development to improve productivity, portability, and maintainability. The tutorial demonstrates an end-to-end workflow from visual application modeling and automated artifact generation to execution across heterogeneous quantum backends through a middleware orchestration layer.
 
 ---
 
 ## Motivation
 
-Quantum computing offers computational advantages for specific problem classes by leveraging quantum mechanical phenomena such as superposition and entanglement. However, practical deployment remains challenging due to the requirement of low-level circuit design and backend-specific implementation details.
+Despite significant advances in quantum hardware and software ecosystems, quantum application development remains largely code-centric. Implementing a quantum algorithm typically requires expertise in multiple layers of the stack, including quantum algorithm design, provider-specific SDKs, circuit representations, and execution workflows.
 
-To address these limitations, a shift toward higher-level abstraction mechanisms is emerging in quantum software engineering. Low-code and model-driven approaches enable domain experts to specify quantum algorithms using visual building blocks such as state preparation, oracle definitions, and diffusion operators, rather than explicit gate-level programming.
+Furthermore, the growing diversity of quantum platforms has resulted in fragmented development environments. Developers often need to reimplement or adapt applications for different SDKs, intermediate representations, and execution targets, increasing development effort and reducing portability.
 
-This tutorial demonstrates how such abstractions can be systematically mapped to executable quantum artifacts through automated compilation and orchestration. The result is a unified workflow that spans from visual modeling to execution on quantum hardware or simulators.
+To address these challenges, higher-level engineering approaches are needed. Inspired by established practices in software engineering, model-driven and low-code techniques enable developers to focus on application logic rather than implementation details. Quantum algorithms can be specified as reusable, platform-independent models, which are then automatically transformed into executable artifacts such as OpenQASM 3 programs and deployment workflows.
+
 
 ---
 
 ## Intended Audience
 
-This tutorial is designed for software engineers, researchers, and system architects interested in quantum software development. No deep background in quantum physics or quantum circuit design is required.
+This tutorial targets researchers, quantum software engineers, software architects, and practitioners who already possess a basic understanding of quantum computing and quantum algorithms.
 
-Participants will benefit from basic familiarity with software engineering concepts, distributed systems, or model-driven development approaches.
+Participants interested in improving development productivity, managing platform heterogeneity, and applying software engineering principles to quantum applications will benefit most from the tutorial. Prior experience with quantum SDKs such as Qiskit, Braket, Cirq, or similar frameworks is helpful but not required.
+
+---
+
+## Learning Goals
+
+By the end of this tutorial, participants will be able to:
+
+* Understand the challenges of developing and maintaining quantum applications across heterogeneous software ecosystems.
+* Apply model-driven engineering principles to quantum software development.
+* Create platform-independent quantum application models using a visual development environment.
+* Automatically generate executable quantum artifacts, including OpenQASM 3 representations and workflow definitions.
+* Execute quantum applications across different backends using a unified orchestration middleware.
+* Evaluate how low-code and model-driven approaches can accelerate quantum software engineering workflows.
 
 ---
 
@@ -48,17 +62,6 @@ Participants should bring a laptop with the following prerequisites installed:
 - Docker Engine and Docker Compose
 - Internet access for cloning repositories and pulling containers
 - A modern web browser (Chrome, Firefox, Edge, or Safari)
-
----
-
-## Learning Goals
-
-By the end of this tutorial, participants will be able to:
-
-1. Understand the principles of model-driven and low-code quantum software engineering.
-2. Construct quantum application models using a visual development environment.
-3. Transform high-level models into executable OpenQASM3 representations.
-4. Execute quantum workflows via a middleware-based orchestration layer across heterogeneous backends.
 
 ---
 
