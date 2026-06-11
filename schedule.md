@@ -35,4 +35,4 @@ The tutorial consists of two sessions combining focused presentations with hands
 | **40 min** | Practical Session I:  Modeling, Transformation, and Execution                       | [Instructions](https://laviniastiliadou.github.io/quantics-tutorial/handson.html), [Source Code](https://github.com/LaviniaStiliadou/2026-quantics) |
 | *30 min*   | *Coffee Break & Networking*                                                                      | —                                |
 | **40 min** | Practical Session II: Automated Model Generation and Workflow Integration                        | [Instructions](https://laviniastiliadou.github.io/quantics-tutorial/handsonsession2.html), [Source Code](https://github.com/LaviniaStiliadou/2026-quantics) |
-| **15 min** | Discussion, Evaluation & Q/A                                                                     | [Survey will follow]`                       |
+| **15 min** | Discussion, Evaluation & Q/A                                                                     | [Survey will follow]                       |
