@@ -29,7 +29,7 @@ The underlying framework consists of three integrated core services:
 Execute the following commands in your terminal to launch the containerized infrastructure:
 
 ```bash
-git clone https://github.com/LaviniaStiliadou/2026-icsoft-tutorial.git
+git clone https://github.com/LaviniaStiliadou/2026-quantics-tutorial.git
 cd docker
 docker-compose up -d
 ```
@@ -43,6 +43,7 @@ Open your primary web browser window and navigate to the application ecosystem e
 **URL:** `http://localhost:4242`
 
 The interface will initialize with the default visual modeling canvas.
+![Modeler Initial](docs/graphics/0_ModelerOverview.png)
 
 ---
 
@@ -54,6 +55,7 @@ To demonstrate collaborative software engineering across different domain roles 
 
 Access the workspace configuration settings panel in this second tab and switch its active profile layout to **Expert Mode**. This unlocks advanced node properties and deeper register structures.
 
+![Modeler Initial](docs/graphics/1_ConfigureExpertMode.png)
 ---
 
 ## Step 4: Initialize Real-Time Collaboration & Synchronization
@@ -61,6 +63,7 @@ Access the workspace configuration settings panel in this second tab and switch 
 On both active browser tabs, navigate to the **Experience Mode** menu and enable **Collaboration Mode**.
 
 The underlying framework will instantly synchronize the shared state machine. You will observe concurrent workspace telemetry displaying multi-user sessions and real-time cursor tracking across both design interfaces.
+![Enable Collaboration](docs/graphics/2_EnableCollaboration.png)
 
 ---
 
@@ -71,6 +74,7 @@ In the first browser tab, open the **Boundary Elements** component drawer on the
 Drag a **Prepare State** element block onto the central modeling grid space.
 
 Observe how the block instantly appears in the second browser tab via real-time synchronization.
+![Prepare State](docs/graphics/3_PrepareState.png)
 
 > 💡 **Note:** If you prefer to bypass manual component mapping at any point, you can directly upload the validated baseline file from the repository via `models/grover.json`.
 
@@ -84,6 +88,8 @@ Drag the **Oracle** and **Grover Diffuser** modules onto the canvas workspace.
 
 Connect the structural output node from the **State Preparation** module into the input nodes of the subsequent quantum operators.
 
+![Oracle](docs/graphics/4_Grover.png)
+
 ---
 
 ## Step 7: Concurrent Parameter Injection & Measurement
@@ -95,7 +101,7 @@ Wire the output of the **Diffuser** block to the input entry of the **Measuremen
 To experience the collaborative synchronization, use your second browser tab (**Expert Mode**) to click on the components and specify the quantum register sizing and your designated oracle search parameters within the properties panel.
 
 Watch your first browser tab automatically update to reflect these structural attribute adjustments.
-
+![Measurement](docs/graphics/5_Measurement.png)
 ---
 
 ## Step 8: Trigger the Model-to-Code Transformation
@@ -105,6 +111,7 @@ Select the **Send to Backend** execution action trigger located on the top appli
 The transformation engine will validate the schema. Click **Continue** to progress past non-blocking verification or optimization notices.
 
 Define **OpenQASM3** as your programmatic compilation target format.
+![Validation](docs/graphics/7_SendToBackendOpenqasm.png)
 
 ---
 
@@ -115,14 +122,17 @@ Navigate to the **History** workspace module to review generated build artifacts
 Locate your newly compiled OpenQASM3 sequence matrix and select **Execute Circuit**.
 
 Advance through the structural blue prompt indicators to hand off the execution configuration safely to the Qunicorn service router.
-
+![Download Result](docs/graphics/10_ExecutionStart.png)
+![Download Result](docs/graphics/11_QunicornDeployment.png)
+![Download Result](docs/graphics/12_QunicornDeployment2.png)
 ---
 
 ## Step 10: Analyze Hardware Target Output
 
 Once the runtime pipeline tasks finish processing inside the middleware execution queue, the interface displays the return registers.
 
-The peak value amplification verifies successful tracking of the target data element ( |1\rangle ), completing the low-code engineering cycle.
+The peak value amplification verifies successful tracking of the target data element ( |1\rangle ), completing the low-code example.
+![Result](docs/graphics/13_QunicornExecutionResult.png)
 
 ---
 
@@ -130,12 +140,10 @@ The peak value amplification verifies successful tracking of the target data ele
 
 ## Disclaimer of Warranty
 
-Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an **"AS IS" BASIS**, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
-
-You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with your exercise of permissions under this License.
+Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
 
 ## Haftungsausschluss
 
 Dies ist ein Forschungsprototyp.
-
-Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist – außer in Fällen von grober Fahrlässigkeit, Vorsatz und Personenschäden – ausgeschlossen.
+Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist, außer in Fällen von grober Fahrlässigkeit, Vorsatz und Personenschäden, ausgeschlossen.
