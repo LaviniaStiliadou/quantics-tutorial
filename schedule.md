@@ -30,9 +30,9 @@ The tutorial consists of two sessions combining focused presentations with hands
 
 | Duration   | Session / Topic                                                                                  | Materials                        |
 | :--------- | :----------------------------------------------------------------------------------------------- | :------------------------------- |
-| **20 min** | Motivation, Challenges, and Architectural Foundations for Quantum Software Engineering           | `[Slides]`                       |
-| **35 min** | Low-Code for Quantum Applications & Introduction to the Quantum Low-Code Modeler | `[Slides]`                       |
-| **40 min** | Practical Session I:  Modeling, Transformation, and Execution                       | `[Instructions](https://laviniastiliadou.github.io/quantics-tutorial/handson.html`, `[Source Code](https://github.com/LaviniaStiliadou/2026-quantics)` |
+| **20 min** | Motivation, Challenges, and Architectural Foundations for Quantum Software Engineering           | [Slides](https://github.com/LaviniaStiliadou/quantics-tutorial/blob/main/resources/slides/Quantics_Session1.pdf)                       |
+| **35 min** | Low-Code for Quantum Applications & Introduction to the Quantum Low-Code Modeler | [Slides](https://github.com/LaviniaStiliadou/quantics-tutorial/blob/main/resources/slides/Quantics_Session2.pdf)                       |
+| **40 min** | Practical Session I:  Modeling, Transformation, and Execution                       | [Instructions](https://laviniastiliadou.github.io/quantics-tutorial/handson.html), [Source Code](https://github.com/LaviniaStiliadou/2026-quantics) |
 | *30 min*   | *Coffee Break & Networking*                                                                      | —                                |
-| **40 min** | Practical Session II: Automated Model Generation and Workflow Integration                        | `[Instructions](https://laviniastiliadou.github.io/quantics-tutorial/handson2.html`, `[Source Code](https://github.com/LaviniaStiliadou/2026-quantics)` |
-| **15 min** | Discussion, Evaluation & Q/A                                                                     | `[Survey]`                       |
+| **40 min** | Practical Session II: Automated Model Generation and Workflow Integration                        | [Instructions](https://laviniastiliadou.github.io/quantics-tutorial/handson2.html), [Source Code](https://github.com/LaviniaStiliadou/2026-quantics) |
+| **15 min** | Discussion, Evaluation & Q/A                                                                     | [Survey will follow]`                       |
