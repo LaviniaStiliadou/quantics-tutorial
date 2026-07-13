@@ -1,6 +1,6 @@
 ---
 
-title: Hands-On Session
+title: Hands-On Session 3
 layout: default
 navigation_weight: 5
 ---
