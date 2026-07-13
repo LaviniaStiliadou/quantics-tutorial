@@ -1,182 +1,173 @@
 ---
 
-title: Hands-On Session 2
+title: Hands-On Session
 layout: default
-navigation_weight: 4
+navigation_weight: 3
 ---
 
 
-# Hands-On Tutorial: Low-Code Quantum Application Development — From Visual Modeling to Execution
+# Hands-On Tutorial: Low-Code Quantum Application Development — From Visual Modeling to Execution Part 1
 
+This practical session guides participants through the end-to-end lifecycle of a quantum application using the Qonstruct framework. The tutorial emphasizes a **visual, model-driven quantum model**, where participants design quantum algorithms using a low-code environment and execute them via automated compilation and quantum middleware.
 
----
-
-## Setup
-
-This guide explains how to deploy the Quantum Low-Code Modeler using Docker and run a QAOA-based workflow.
-
-All required components are provided as Docker containers and started using the supplied `docker-compose` file.
+Participants will explore how high-level quantum models are transformed into executable circuits and deployed on quantum backends without requiring direct circuit-level programming.
 
 ---
 
-## 1. Prepare the Environment
+## Architectural Components
 
-Open the `docker` directory and update the `.env` file:
+The underlying framework consists of three integrated core services:
 
-```
-PUBLIC_HOSTNAME=<your-public-ip>
-```
-
-Important: Use a publicly reachable IP address. Do not use `localhost`.
+* **Quantum Low-Code Modeler:** A web-based graphical workspace enabling collaborative visual modeling of quantum algorithms. It allows users to define quantum workflows at a high level of abstraction instead of manually specifying quantum circuits.
+* **Backend Transformation Service:** A compiler engine that validates visual quantum models and automatically transforms them into executable quantum circuits (OpenQASM3) or workflows.
+* **Qunicorn:** A middleware layer for orchestrating execution of quantum circuits across heterogeneous quantum cloud providers and simulators.
 
 ---
 
-## 2. Start the Components
+## Step 1: Initialize the Services
 
-Run the following commands from the `docker` directory:
+Execute the following commands in your terminal to launch the containerized infrastructure:
 
-```
-docker-compose pull
-docker-compose up --build
+```bash
+git clone https://github.com/LaviniaStiliadou/2026-quantics.git
+cd docker
+docker-compose up -d
 ```
 
-Wait until all containers are running. This may take several minutes.
+---
+
+## Step 2: Access the Workspace Layout
+
+Open your primary web browser window and navigate to the application ecosystem endpoint:
+
+**URL:** `http://localhost:4242`
+
+The interface will initialize with the default visual modeling canvas.
+![Modeler Initial](docs/graphics/0_ModelerOverview.png)
 
 ---
 
-## 3. Open the Modeler
+## Step 3: Create the Initial Quantum Register
 
-Open the following URL:
+We will implement Grover's Search Algorithm using three qubits.
 
-http://localhost:4242
+1. In the left toolbox, expand Circuit Primitives.
+2. Drag three Qubit elements onto the modeling canvas.
 
-You should see the Modeler start screen:
+![Modeler Initial](docs/graphics/Part1_Qubits.png)
 
-![Modeler Initial](docs/graphics/Bild1.png)
+3. Under Circuit Primitives → Basis Change, locate the Hadamard (H) gate.
+4. Drag one Hadamard gate onto the canvas.
+5. Connect each qubit to its corresponding Hadamard gate.
 
-The Modeler is pre-configured with:
+![Hadamard](docs/graphics/Part1_Hadamard.png)
 
-- endpoints for the low-code backend  
-- OpenTOSCA ecosystem workflow  
-- QRM repository  
+At this point, each qubit is placed into an equal superposition, creating the initial search space.
 
-Open the Configuration menu in the toolbar and enter your OpenAI token.
 
----
+## Step 4: Build the Oracle
 
-## 4. Select an Algorithm
+In this example, the marked (target) state is |000⟩.
 
-Open the Algorithm Selection view:
+1. Open Circuit Primitives → Pauli Gates.
+2. Drag three Pauli-X (X) gates
+3. Connect the Hadamard gates to the Pauli-X gates.
 
-![Algorithm Selection](docs/graphics/Bild2.png)
+![Oracle Start](docs/graphics/Part1_OracleStart.png)
 
-Read the information provided:
+4. Open Circuit Primitives → Multi-Control Gates.
+5. Drag an MCMT gate onto the canvas.
+6. Configure the gate with the following properties:
+- Operation (U): Z
+- Number of Controls: 2
+- Number of Targets: 1
+- Connect the three qubits to the MCMT gate.
 
-![Notes](docs/graphics/Bild3.png)
+![MCMT Gate](docs/graphics/Part1_MCMT.png)
 
-Enter the following problem description:
+7. Add another Pauli-X gate to each qubit.
+8. Connect the outputs of the MCMT gate to these X gates.
 
-```
-I have five locations connected by roads. I want to split the locations into two groups so that as many roads as possible go between the groups.
-```
+![Oracle complete](docs/graphics/Part1_OracleComplete.png)
 
-![Problem Input](docs/graphics/Bild4.png)
+The oracle is now complete and marks the state |000⟩ by applying a phase inversion.
 
-Continue to the next step.
+## Step 5: Build the Diffusion Operator
 
----
+The diffusion operator amplifies the probability of measuring the marked state.
 
-## 5. Inspect the Pattern Graph
+1. Add a Hadamard gate to the canvas so connect the output of the X gate with a Hadamard gate.
+2. Add the MCMT Gate
+3. Configure it as follows:
+- Operation (U): Z
+- Number of Controls: 2
+- Number of Targets: 1
+- Connect all three qubits to the gate.
+4. Add another Pauli-X gate and connect it with the outputs of the MCMT gate.
+5. Follow each X gate with a Hadamard gate.
 
-Click on "Pattern Graph":
+The diffusion operator is now complete.
+![Oracle complete](docs/graphics/Part1_DiffusionComplete.png)
 
-![Pattern Graph](docs/graphics/Bild5.png)
+## Step 6: Merge the Qubit Paths
 
-Scroll to review the listed components and information, then return using the Back button.
+To reduce the number of blocks, we merge the three qubits into one quantum register.
 
----
+1. Open Circuit Primitives and under Utilities you find the Merger.
+2. Drag a Merge element onto the canvas.
+3. Right click on the element and click on add input.
+3. Connect the outputs of the three qubit paths to the Merge element.
+![Oracle complete](docs/graphics/Part1_Merger.png)
 
-## 6. Select the Template
+## Step 7: Measure the Result
+Open Boundary Elements.
+Navigate to the Quantum to Classical subcategory and drag a Measurement element onto the canvas.
+Connect the output of the Merge element to the Measurement element.
 
-Click on "Select Template":
+The circuit is now complete. After execution, the measurement should return the marked state |000⟩ with a high probability, demonstrating the successful operation of Grover's search algorithm.
 
-![Select Template](docs/graphics/Bild6.png)
+![Oracle complete](docs/graphics/Part1_complete.png)
 
-Select the QAOA template.
 
-This template is also available as `docs/model.json`.
+## Step 8: Trigger the Model-to-Code Transformation
 
-![Template](docs/graphics/Bild7.png)
+Select the **Send to Backend** execution action trigger located on the top application toolbar.
 
----
+The transformation engine will validate the schema. Click **Continue** to progress past non-blocking verification or optimization notices.
 
-## 7. Transform the Model
-
-Click on "Transform Model":
-
-![Transform](docs/graphics/Bild8.png)
-
-A validation warning may appear:
-
-![Warning](docs/graphics/Bild9.png)
-
-This warning is expected. QAOA automatically adapts to the number of nodes, and the backend configures measurement of all qubits, so no manual specification is required.
-
----
-
-## 8. Select and Deploy the Workflow
-
-Select a workflow:
-
-![Workflow](docs/graphics/Bild10.png)
-
-Go to History. The top entry is the most recent transformation.
-
-Click on Deploy:
-
-![Deploy](docs/graphics/Bild11.png)
-
-Deployment may take some time.
+Define **OpenQASM3** as your programmatic compilation target format.
+![Validation](docs/graphics/Part1_Backend2.png)
 
 ---
 
-## 9. Execute the Workflow in Camunda
+## Step 9: Queue and Orchestrate Deployment
 
-Open:
+Navigate to the **History** workspace module to review generated build artifacts.
 
-http://localhost:8090
+Locate your newly compiled OpenQASM3 sequence matrix and select **Execute Circuit**.
 
-Log in using the following credentials:
+Advance through the structural blue prompt indicators to hand off the execution configuration safely to the Qunicorn service router.
+![Download Result](docs/graphics/Part1_Backend3.png)
+![Download Result](docs/graphics/Part1_Backend4.png)
+---
 
-```
-user: demo
-password: demo
-```
+## Step 10: Analyze Hardware Target Output
 
-Open the Tasklist, select the process, and enter your IP address:
+Once the runtime pipeline tasks finish processing inside the middleware execution queue, the interface displays the return registers.
 
-![Task Run](docs/graphics/Bild12.png)
-
-Click Run.
+The peak value amplification verifies successful tracking of the target data element ( |000\rangle ), completing the low-code example.
+![Result](docs/graphics/Part1_Backend45png.png)
 
 ---
 
-## 10. View the Result
-
-Open the Camunda Cockpit.
-
-The result includes the objective function value. In this example, the value is:
-
-```
-5
-```
-![Final Result](docs/graphics/Bild13.png)
----
-
-
+# Legal Notices
 
 ## Disclaimer of Warranty
-Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE. You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
+
+Unless required by applicable law or agreed to in writing, Licensor provides the Work (and each Contributor provides its Contributions) on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+You are solely responsible for determining the appropriateness of using or redistributing the Work and assume any risks associated with Your exercise of permissions under this License.
 
 ## Haftungsausschluss
-Dies ist ein Forschungsprototyp. Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist, außer in Fällen von grober Fahrlässigkeit, Vorsatz und Personenschäden, ausgeschlossen.
+
+Dies ist ein Forschungsprototyp.
+Die Haftung für entgangenen Gewinn, Produktionsausfall, Betriebsunterbrechung, entgangene Nutzungen, Verlust von Daten und Informationen, Finanzierungsaufwendungen sowie sonstige Vermögens- und Folgeschäden ist, außer in Fällen von grober Fahrlässigkeit, Vorsatz und Personenschäden, ausgeschlossen.

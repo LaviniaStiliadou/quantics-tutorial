@@ -1,0 +1,2044 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "containsPlaceholder": false,
+    "id": "flow-1783934084252",
+    "timestamp": "2026-07-13T09:14:44.252Z"
+  },
+  "nodes": [
+    {
+      "id": "0a3ff8ab-96b8-4465-8560-21e1a3f110d3",
+      "type": "gateNode",
+      "position": {
+        "x": -210,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "Qubit Circuit",
+        "inputs": [],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Represents a single qubit used in the circuit.",
+        "icon": [
+          "qubit.png",
+          "PaletteIcon_Qubit_Beginner.png"
+        ],
+        "identifiers": [
+          "q668926"
+        ],
+        "inputTypes": [],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": -210,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "9c4730c5-bd1e-45b2-8bfa-e1497abc1bb2",
+      "type": "gateNode",
+      "position": {
+        "x": -210,
+        "y": 210
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "Qubit Circuit",
+        "inputs": [],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Represents a single qubit used in the circuit.",
+        "icon": [
+          "qubit.png",
+          "PaletteIcon_Qubit_Beginner.png"
+        ],
+        "identifiers": [
+          "q284871"
+        ],
+        "inputTypes": [],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": -210,
+        "y": 210
+      },
+      "dragging": false
+    },
+    {
+      "id": "2b7e8f03-7ec7-48d3-9ce1-c546568ba172",
+      "type": "gateNode",
+      "position": {
+        "x": -210,
+        "y": 360
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "Qubit Circuit",
+        "inputs": [],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Represents a single qubit used in the circuit.",
+        "icon": [
+          "qubit.png",
+          "PaletteIcon_Qubit_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": -210,
+        "y": 360
+      },
+      "dragging": false
+    },
+    {
+      "id": "56e95cd8-214b-4faa-ac46-4a8174d5064d",
+      "type": "gateNode",
+      "position": {
+        "x": 45,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "0a3ff8ab-96b8-4465-8560-21e1a3f110d3",
+            "edgeId": "59821c54-bd2c-40fe-9f13-42b9986937b6",
+            "identifiers": [
+              "q668926"
+            ],
+            "targetHandle": "quantumHandleGateInput056e95cd8-214b-4faa-ac46-4a8174d5064d"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q668926"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 45,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "7c13b55c-f1db-4276-821f-8baa2dab74bb",
+      "type": "gateNode",
+      "position": {
+        "x": 45,
+        "y": 210
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "9c4730c5-bd1e-45b2-8bfa-e1497abc1bb2",
+            "edgeId": "9c82930d-7371-4a69-842a-fcd79507bec7",
+            "identifiers": [
+              "q284871"
+            ],
+            "targetHandle": "quantumHandleGateInput07c13b55c-f1db-4276-821f-8baa2dab74bb"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q284871"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 45,
+        "y": 210
+      },
+      "dragging": false
+    },
+    {
+      "id": "da8b0765-b5a3-4aaf-ab6e-e1b9d974bf2f",
+      "type": "gateNode",
+      "position": {
+        "x": 45,
+        "y": 360
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "2b7e8f03-7ec7-48d3-9ce1-c546568ba172",
+            "edgeId": "84071655-12d5-4f5c-b55f-7118603207d6",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0da8b0765-b5a3-4aaf-ab6e-e1b9d974bf2f"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 45,
+        "y": 360
+      },
+      "dragging": false
+    },
+    {
+      "id": "ef7a38f7-224f-4d54-b78c-9b7d4e4fee58",
+      "type": "gateNode",
+      "position": {
+        "x": 300,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "56e95cd8-214b-4faa-ac46-4a8174d5064d",
+            "edgeId": "b75663a8-db97-4524-a7de-f6a723b114bd",
+            "identifiers": [
+              "q668926"
+            ],
+            "targetHandle": "quantumHandleGateInput0ef7a38f7-224f-4d54-b78c-9b7d4e4fee58"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q668926"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 300,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "5685d6a6-7af6-4e89-aeda-d6851d0af0d9",
+      "type": "gateNode",
+      "position": {
+        "x": 300,
+        "y": 210
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "7c13b55c-f1db-4276-821f-8baa2dab74bb",
+            "edgeId": "14f672bc-1b87-43e5-a478-246c5041b413",
+            "identifiers": [
+              "q284871"
+            ],
+            "targetHandle": "quantumHandleGateInput05685d6a6-7af6-4e89-aeda-d6851d0af0d9"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q284871"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 300,
+        "y": 210
+      },
+      "dragging": false
+    },
+    {
+      "id": "334dbd13-0964-4820-ac3c-5954ebcdf90d",
+      "type": "gateNode",
+      "position": {
+        "x": 300,
+        "y": 360
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "da8b0765-b5a3-4aaf-ab6e-e1b9d974bf2f",
+            "edgeId": "ca6dc4db-ffbe-4226-9c4e-9b996f01848d",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0334dbd13-0964-4820-ac3c-5954ebcdf90d"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 300,
+        "y": 360
+      },
+      "dragging": false
+    },
+    {
+      "id": "75138862-3ab7-4a94-a018-0f3e30713d38",
+      "type": "mcmt-gate",
+      "position": {
+        "x": 495,
+        "y": -15
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "MCMT Gate",
+        "inputs": [
+          {
+            "id": "ef7a38f7-224f-4d54-b78c-9b7d4e4fee58",
+            "edgeId": "dc103965-5aa8-4f25-bfbf-7d55d48d71db",
+            "identifiers": [
+              "q668926"
+            ],
+            "targetHandle": "quantumHandleInput075138862-3ab7-4a94-a018-0f3e30713d38"
+          },
+          {
+            "id": "5685d6a6-7af6-4e89-aeda-d6851d0af0d9",
+            "edgeId": "917d1ef3-202e-419e-9abc-ee3152297651",
+            "identifiers": [
+              "q284871"
+            ],
+            "targetHandle": "quantumHandleInput175138862-3ab7-4a94-a018-0f3e30713d38"
+          },
+          {
+            "id": "334dbd13-0964-4820-ac3c-5954ebcdf90d",
+            "edgeId": "d67eb545-b126-4454-9e5c-c0d46d75325a",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleInput275138862-3ab7-4a94-a018-0f3e30713d38"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          false,
+          true
+        ],
+        "description": "Multi-Controlled Multi-Target Gate. Applies a base gate to multiple targets using multiple controls.",
+        "icon": "PaletteIcon_MCMT.png",
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any",
+          "any",
+          "any"
+        ],
+        "outputTypes": [],
+        "numControls": "2",
+        "numTargets": "1",
+        "parameter": 0,
+        "baseGate": "z"
+      },
+      "width": 320,
+      "height": 558,
+      "positionAbsolute": {
+        "x": 495,
+        "y": -15
+      },
+      "dragging": false
+    },
+    {
+      "id": "7753ba1a-b882-4bc0-bc27-583bde43c8f2",
+      "type": "gateNode",
+      "position": {
+        "x": 900,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "75138862-3ab7-4a94-a018-0f3e30713d38",
+            "edgeId": "a5e7d41b-238c-43bb-80be-e8b69583bfea",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput07753ba1a-b882-4bc0-bc27-583bde43c8f2"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 900,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "ec4e3c41-e102-4df7-80a2-c2eecba78144",
+      "type": "gateNode",
+      "position": {
+        "x": 900,
+        "y": 210
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "75138862-3ab7-4a94-a018-0f3e30713d38",
+            "edgeId": "c16d88b3-5c01-45f7-88dc-730611627096",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0ec4e3c41-e102-4df7-80a2-c2eecba78144"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 900,
+        "y": 210
+      },
+      "dragging": false
+    },
+    {
+      "id": "3525a778-58ac-4ddf-8682-5f568e258c37",
+      "type": "gateNode",
+      "position": {
+        "x": 900,
+        "y": 345
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "75138862-3ab7-4a94-a018-0f3e30713d38",
+            "edgeId": "7cd71e52-05d6-46fc-b663-4868d54bcf67",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput03525a778-58ac-4ddf-8682-5f568e258c37"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 900,
+        "y": 345
+      },
+      "dragging": false
+    },
+    {
+      "id": "6c6c8260-f546-451f-b40d-71e02c277503",
+      "type": "gateNode",
+      "position": {
+        "x": 1095,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "7753ba1a-b882-4bc0-bc27-583bde43c8f2",
+            "edgeId": "f7fb9191-c75e-462f-ad60-190ac888ff7f",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput06c6c8260-f546-451f-b40d-71e02c277503"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1095,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "9923943a-3845-4ba1-b472-b1883a8a8ce4",
+      "type": "gateNode",
+      "position": {
+        "x": 1095,
+        "y": 210
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "ec4e3c41-e102-4df7-80a2-c2eecba78144",
+            "edgeId": "776ed9f0-7e42-41d0-884b-b7735da2268a",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput09923943a-3845-4ba1-b472-b1883a8a8ce4"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1095,
+        "y": 210
+      },
+      "dragging": false
+    },
+    {
+      "id": "1731f5bb-304f-41f5-93e4-e2abd40f7a6f",
+      "type": "gateNode",
+      "position": {
+        "x": 1095,
+        "y": 345
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "3525a778-58ac-4ddf-8682-5f568e258c37",
+            "edgeId": "9a8734af-a137-4b15-964a-8e1dd84d7a12",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput01731f5bb-304f-41f5-93e4-e2abd40f7a6f"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1095,
+        "y": 345
+      },
+      "dragging": false
+    },
+    {
+      "id": "195834ff-e717-49d9-b75d-cfd78141ef99",
+      "type": "gateNode",
+      "position": {
+        "x": 1275,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "6c6c8260-f546-451f-b40d-71e02c277503",
+            "edgeId": "9aaf5231-7558-40fb-93e8-29a0927ac37d",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0195834ff-e717-49d9-b75d-cfd78141ef99"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1275,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "1a796c5e-f5b9-4bbc-979b-8073c39e02a4",
+      "type": "gateNode",
+      "position": {
+        "x": 1275,
+        "y": 210
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "9923943a-3845-4ba1-b472-b1883a8a8ce4",
+            "edgeId": "13319faa-24c2-419a-a374-407f960ea784",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput01a796c5e-f5b9-4bbc-979b-8073c39e02a4"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1275,
+        "y": 210
+      },
+      "dragging": false
+    },
+    {
+      "id": "b0c30475-fbf1-4ce4-b083-c7b828068fee",
+      "type": "gateNode",
+      "position": {
+        "x": 1275,
+        "y": 345
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "1731f5bb-304f-41f5-93e4-e2abd40f7a6f",
+            "edgeId": "3e9d60a8-6039-4056-b13f-ec4ccda2414e",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0b0c30475-fbf1-4ce4-b083-c7b828068fee"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1275,
+        "y": 345
+      },
+      "dragging": false
+    },
+    {
+      "id": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "type": "mcmt-gate",
+      "position": {
+        "x": 1485,
+        "y": 30
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "MCMT Gate",
+        "inputs": [
+          {
+            "id": "195834ff-e717-49d9-b75d-cfd78141ef99",
+            "edgeId": "52b6307e-a576-4eb8-9353-d9520a6fca1d",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleInput0cc8b568f-41df-4649-86b8-a4b075f389aa"
+          },
+          {
+            "id": "1a796c5e-f5b9-4bbc-979b-8073c39e02a4",
+            "edgeId": "c4325147-b2a1-4298-96a7-4cc0f6448d03",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleInput1cc8b568f-41df-4649-86b8-a4b075f389aa"
+          },
+          {
+            "id": "b0c30475-fbf1-4ce4-b083-c7b828068fee",
+            "edgeId": "80e788f5-2ec3-42d0-baf0-ab7382dfcc11",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleInput2cc8b568f-41df-4649-86b8-a4b075f389aa"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          false,
+          true
+        ],
+        "description": "Multi-Controlled Multi-Target Gate. Applies a base gate to multiple targets using multiple controls.",
+        "icon": "PaletteIcon_MCMT.png",
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any",
+          "any",
+          "any"
+        ],
+        "outputTypes": [],
+        "numControls": "2",
+        "parameter": 0,
+        "baseGate": "z",
+        "numTargets": "1"
+      },
+      "width": 320,
+      "height": 558,
+      "positionAbsolute": {
+        "x": 1485,
+        "y": 30
+      },
+      "dragging": false
+    },
+    {
+      "id": "5261d7a1-6b2e-4af5-969f-16c7241a3f7c",
+      "type": "gateNode",
+      "position": {
+        "x": 1890,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+            "edgeId": "c8f01209-8cea-4c70-b5dd-c0b3eecd96eb",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput05261d7a1-6b2e-4af5-969f-16c7241a3f7c"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1890,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "f9db3b4a-cb9c-4701-8d76-8ca084409689",
+      "type": "gateNode",
+      "position": {
+        "x": 1890,
+        "y": 195
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+            "edgeId": "0640ec3f-49cb-4263-8cb9-662739b6b2ff",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0f9db3b4a-cb9c-4701-8d76-8ca084409689"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1890,
+        "y": 195
+      },
+      "dragging": false
+    },
+    {
+      "id": "ea9df284-777e-4f41-9dae-d235d97b5429",
+      "type": "gateNode",
+      "position": {
+        "x": 1890,
+        "y": 345
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "X",
+        "inputs": [
+          {
+            "id": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+            "edgeId": "aa30f618-7697-4cd1-ab93-b30303e2996b",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0ea9df284-777e-4f41-9dae-d235d97b5429"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Pauli-X gate: flips the state.",
+        "icon": [
+          "pauliX.png",
+          "PaletteIcon_X_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 1890,
+        "y": 345
+      },
+      "dragging": false
+    },
+    {
+      "id": "bac03168-b84e-4418-b976-878e0790a541",
+      "type": "gateNode",
+      "position": {
+        "x": 2115,
+        "y": 45
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "5261d7a1-6b2e-4af5-969f-16c7241a3f7c",
+            "edgeId": "017921bd-9aa1-4e62-b0e0-b1b1dc10b6a6",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput0bac03168-b84e-4418-b976-878e0790a541"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 2115,
+        "y": 45
+      },
+      "dragging": false
+    },
+    {
+      "id": "18c8f1dc-c9a5-42cd-bbd6-b87fce3cbaa7",
+      "type": "gateNode",
+      "position": {
+        "x": 2115,
+        "y": 195
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "f9db3b4a-cb9c-4701-8d76-8ca084409689",
+            "edgeId": "ba07b005-c4db-4ed7-afb8-5d171051666a",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput018c8f1dc-c9a5-42cd-bbd6-b87fce3cbaa7"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 2115,
+        "y": 195
+      },
+      "dragging": false
+    },
+    {
+      "id": "13b6a27f-4c90-45c9-bc02-c68a1b340df5",
+      "type": "gateNode",
+      "position": {
+        "x": 2115,
+        "y": 345
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "H",
+        "inputs": [
+          {
+            "id": "ea9df284-777e-4f41-9dae-d235d97b5429",
+            "edgeId": "a8d62817-e3df-4c5b-9dd9-9963e4f280c1",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleGateInput013b6a27f-4c90-45c9-bc02-c68a1b340df5"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Creates superposition.",
+        "icon": [
+          "hadamard.png",
+          "PaletteIcon_Hadamard_Beginner.png"
+        ],
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any"
+        ],
+        "outputTypes": [],
+        "parameter": "0"
+      },
+      "width": 110,
+      "height": 110,
+      "positionAbsolute": {
+        "x": 2115,
+        "y": 345
+      },
+      "dragging": false
+    },
+    {
+      "id": "35ab1807-45d7-4b1d-aa93-486383748620",
+      "type": "mergerNode",
+      "position": {
+        "x": 2310,
+        "y": 120
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "Merger",
+        "inputs": [
+          {
+            "id": "bac03168-b84e-4418-b976-878e0790a541",
+            "edgeId": "466f4754-bfdc-4f0e-befd-6d2ae90854e0",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleMergerInput035ab1807-45d7-4b1d-aa93-486383748620"
+          },
+          {
+            "id": "18c8f1dc-c9a5-42cd-bbd6-b87fce3cbaa7",
+            "edgeId": "a8504693-4dbc-437a-883e-0f92dd545b77",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleMergerInput135ab1807-45d7-4b1d-aa93-486383748620"
+          },
+          {
+            "id": "13b6a27f-4c90-45c9-bc02-c68a1b340df5",
+            "edgeId": "d2b80832-ae67-443d-9438-ea9b972539e9",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleMergerInput235ab1807-45d7-4b1d-aa93-486383748620"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Merges qubits.",
+        "icon": "Merger_palette.png",
+        "identifiers": [
+          "q230627"
+        ],
+        "inputTypes": [
+          "any",
+          "any",
+          "any"
+        ],
+        "outputTypes": [],
+        "numberInputs": 3
+      },
+      "width": 170,
+      "height": 205,
+      "positionAbsolute": {
+        "x": 2310,
+        "y": 120
+      },
+      "dragging": false
+    },
+    {
+      "id": "2275096b-196a-4fe2-b473-ed91c72b6041",
+      "type": "measurementNode",
+      "position": {
+        "x": 2580,
+        "y": 45
+      },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "Measurement",
+        "inputs": [
+          {
+            "id": "35ab1807-45d7-4b1d-aa93-486383748620",
+            "edgeId": "1fd74abf-c586-4e1c-91c3-aac22b5a326e",
+            "identifiers": [
+              "q230627"
+            ],
+            "targetHandle": "quantumHandleMeasurementInput02275096b-196a-4fe2-b473-ed91c72b6041"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Measures a quantum state and returns its classical information and collapsed quantum state.",
+        "icon": "PaletteIcon_Measurement.png",
+        "identifiers": [
+          "q230627"
+        ],
+        "indices": "",
+        "outputIdentifier": "",
+        "inputTypes": [
+          "quantum register"
+        ],
+        "outputTypes": [
+          "array",
+          "quantum register"
+        ]
+      },
+      "width": 320,
+      "height": 440,
+      "positionAbsolute": {
+        "x": 2580,
+        "y": 45
+      },
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "35ab1807-45d7-4b1d-aa93-486383748620",
+      "sourceHandle": "quantumHandleMergerOutput035ab1807-45d7-4b1d-aa93-486383748620",
+      "target": "2275096b-196a-4fe2-b473-ed91c72b6041",
+      "targetHandle": "quantumHandleMeasurementInput02275096b-196a-4fe2-b473-ed91c72b6041",
+      "type": "quantumEdge",
+      "id": "1fd74abf-c586-4e1c-91c3-aac22b5a326e",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "13b6a27f-4c90-45c9-bc02-c68a1b340df5",
+      "sourceHandle": "quantumHandleGateOutput013b6a27f-4c90-45c9-bc02-c68a1b340df5",
+      "target": "35ab1807-45d7-4b1d-aa93-486383748620",
+      "targetHandle": "quantumHandleMergerInput235ab1807-45d7-4b1d-aa93-486383748620",
+      "type": "quantumEdge",
+      "id": "d2b80832-ae67-443d-9438-ea9b972539e9",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "18c8f1dc-c9a5-42cd-bbd6-b87fce3cbaa7",
+      "sourceHandle": "quantumHandleGateOutput018c8f1dc-c9a5-42cd-bbd6-b87fce3cbaa7",
+      "target": "35ab1807-45d7-4b1d-aa93-486383748620",
+      "targetHandle": "quantumHandleMergerInput135ab1807-45d7-4b1d-aa93-486383748620",
+      "type": "quantumEdge",
+      "id": "a8504693-4dbc-437a-883e-0f92dd545b77",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "bac03168-b84e-4418-b976-878e0790a541",
+      "sourceHandle": "quantumHandleGateOutput0bac03168-b84e-4418-b976-878e0790a541",
+      "target": "35ab1807-45d7-4b1d-aa93-486383748620",
+      "targetHandle": "quantumHandleMergerInput035ab1807-45d7-4b1d-aa93-486383748620",
+      "type": "quantumEdge",
+      "id": "466f4754-bfdc-4f0e-befd-6d2ae90854e0",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "ea9df284-777e-4f41-9dae-d235d97b5429",
+      "sourceHandle": "quantumHandleGateOutput0ea9df284-777e-4f41-9dae-d235d97b5429",
+      "target": "13b6a27f-4c90-45c9-bc02-c68a1b340df5",
+      "targetHandle": "quantumHandleGateInput013b6a27f-4c90-45c9-bc02-c68a1b340df5",
+      "type": "quantumEdge",
+      "id": "a8d62817-e3df-4c5b-9dd9-9963e4f280c1",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "f9db3b4a-cb9c-4701-8d76-8ca084409689",
+      "sourceHandle": "quantumHandleGateOutput0f9db3b4a-cb9c-4701-8d76-8ca084409689",
+      "target": "18c8f1dc-c9a5-42cd-bbd6-b87fce3cbaa7",
+      "targetHandle": "quantumHandleGateInput018c8f1dc-c9a5-42cd-bbd6-b87fce3cbaa7",
+      "type": "quantumEdge",
+      "id": "ba07b005-c4db-4ed7-afb8-5d171051666a",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "5261d7a1-6b2e-4af5-969f-16c7241a3f7c",
+      "sourceHandle": "quantumHandleGateOutput05261d7a1-6b2e-4af5-969f-16c7241a3f7c",
+      "target": "bac03168-b84e-4418-b976-878e0790a541",
+      "targetHandle": "quantumHandleGateInput0bac03168-b84e-4418-b976-878e0790a541",
+      "type": "quantumEdge",
+      "id": "017921bd-9aa1-4e62-b0e0-b1b1dc10b6a6",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "sourceHandle": "quantumHandleOutput2cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "target": "ea9df284-777e-4f41-9dae-d235d97b5429",
+      "targetHandle": "quantumHandleGateInput0ea9df284-777e-4f41-9dae-d235d97b5429",
+      "type": "quantumEdge",
+      "id": "aa30f618-7697-4cd1-ab93-b30303e2996b",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "sourceHandle": "quantumHandleOutput1cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "target": "f9db3b4a-cb9c-4701-8d76-8ca084409689",
+      "targetHandle": "quantumHandleGateInput0f9db3b4a-cb9c-4701-8d76-8ca084409689",
+      "type": "quantumEdge",
+      "id": "0640ec3f-49cb-4263-8cb9-662739b6b2ff",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "sourceHandle": "quantumHandleOutput0cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "target": "5261d7a1-6b2e-4af5-969f-16c7241a3f7c",
+      "targetHandle": "quantumHandleGateInput05261d7a1-6b2e-4af5-969f-16c7241a3f7c",
+      "type": "quantumEdge",
+      "id": "c8f01209-8cea-4c70-b5dd-c0b3eecd96eb",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "b0c30475-fbf1-4ce4-b083-c7b828068fee",
+      "sourceHandle": "quantumHandleGateOutput0b0c30475-fbf1-4ce4-b083-c7b828068fee",
+      "target": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "targetHandle": "quantumHandleInput2cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "type": "quantumEdge",
+      "id": "80e788f5-2ec3-42d0-baf0-ab7382dfcc11",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "1a796c5e-f5b9-4bbc-979b-8073c39e02a4",
+      "sourceHandle": "quantumHandleGateOutput01a796c5e-f5b9-4bbc-979b-8073c39e02a4",
+      "target": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "targetHandle": "quantumHandleInput1cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "type": "quantumEdge",
+      "id": "c4325147-b2a1-4298-96a7-4cc0f6448d03",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "195834ff-e717-49d9-b75d-cfd78141ef99",
+      "sourceHandle": "quantumHandleGateOutput0195834ff-e717-49d9-b75d-cfd78141ef99",
+      "target": "cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "targetHandle": "quantumHandleInput0cc8b568f-41df-4649-86b8-a4b075f389aa",
+      "type": "quantumEdge",
+      "id": "52b6307e-a576-4eb8-9353-d9520a6fca1d",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "1731f5bb-304f-41f5-93e4-e2abd40f7a6f",
+      "sourceHandle": "quantumHandleGateOutput01731f5bb-304f-41f5-93e4-e2abd40f7a6f",
+      "target": "b0c30475-fbf1-4ce4-b083-c7b828068fee",
+      "targetHandle": "quantumHandleGateInput0b0c30475-fbf1-4ce4-b083-c7b828068fee",
+      "type": "quantumEdge",
+      "id": "3e9d60a8-6039-4056-b13f-ec4ccda2414e",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "9923943a-3845-4ba1-b472-b1883a8a8ce4",
+      "sourceHandle": "quantumHandleGateOutput09923943a-3845-4ba1-b472-b1883a8a8ce4",
+      "target": "1a796c5e-f5b9-4bbc-979b-8073c39e02a4",
+      "targetHandle": "quantumHandleGateInput01a796c5e-f5b9-4bbc-979b-8073c39e02a4",
+      "type": "quantumEdge",
+      "id": "13319faa-24c2-419a-a374-407f960ea784",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "6c6c8260-f546-451f-b40d-71e02c277503",
+      "sourceHandle": "quantumHandleGateOutput06c6c8260-f546-451f-b40d-71e02c277503",
+      "target": "195834ff-e717-49d9-b75d-cfd78141ef99",
+      "targetHandle": "quantumHandleGateInput0195834ff-e717-49d9-b75d-cfd78141ef99",
+      "type": "quantumEdge",
+      "id": "9aaf5231-7558-40fb-93e8-29a0927ac37d",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "3525a778-58ac-4ddf-8682-5f568e258c37",
+      "sourceHandle": "quantumHandleGateOutput03525a778-58ac-4ddf-8682-5f568e258c37",
+      "target": "1731f5bb-304f-41f5-93e4-e2abd40f7a6f",
+      "targetHandle": "quantumHandleGateInput01731f5bb-304f-41f5-93e4-e2abd40f7a6f",
+      "type": "quantumEdge",
+      "id": "9a8734af-a137-4b15-964a-8e1dd84d7a12",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "ec4e3c41-e102-4df7-80a2-c2eecba78144",
+      "sourceHandle": "quantumHandleGateOutput0ec4e3c41-e102-4df7-80a2-c2eecba78144",
+      "target": "9923943a-3845-4ba1-b472-b1883a8a8ce4",
+      "targetHandle": "quantumHandleGateInput09923943a-3845-4ba1-b472-b1883a8a8ce4",
+      "type": "quantumEdge",
+      "id": "776ed9f0-7e42-41d0-884b-b7735da2268a",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "7753ba1a-b882-4bc0-bc27-583bde43c8f2",
+      "sourceHandle": "quantumHandleGateOutput07753ba1a-b882-4bc0-bc27-583bde43c8f2",
+      "target": "6c6c8260-f546-451f-b40d-71e02c277503",
+      "targetHandle": "quantumHandleGateInput06c6c8260-f546-451f-b40d-71e02c277503",
+      "type": "quantumEdge",
+      "id": "f7fb9191-c75e-462f-ad60-190ac888ff7f",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "75138862-3ab7-4a94-a018-0f3e30713d38",
+      "sourceHandle": "quantumHandleOutput275138862-3ab7-4a94-a018-0f3e30713d38",
+      "target": "3525a778-58ac-4ddf-8682-5f568e258c37",
+      "targetHandle": "quantumHandleGateInput03525a778-58ac-4ddf-8682-5f568e258c37",
+      "type": "quantumEdge",
+      "id": "7cd71e52-05d6-46fc-b663-4868d54bcf67",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "75138862-3ab7-4a94-a018-0f3e30713d38",
+      "sourceHandle": "quantumHandleOutput175138862-3ab7-4a94-a018-0f3e30713d38",
+      "target": "ec4e3c41-e102-4df7-80a2-c2eecba78144",
+      "targetHandle": "quantumHandleGateInput0ec4e3c41-e102-4df7-80a2-c2eecba78144",
+      "type": "quantumEdge",
+      "id": "c16d88b3-5c01-45f7-88dc-730611627096",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "75138862-3ab7-4a94-a018-0f3e30713d38",
+      "sourceHandle": "quantumHandleOutput075138862-3ab7-4a94-a018-0f3e30713d38",
+      "target": "7753ba1a-b882-4bc0-bc27-583bde43c8f2",
+      "targetHandle": "quantumHandleGateInput07753ba1a-b882-4bc0-bc27-583bde43c8f2",
+      "type": "quantumEdge",
+      "id": "a5e7d41b-238c-43bb-80be-e8b69583bfea",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "334dbd13-0964-4820-ac3c-5954ebcdf90d",
+      "sourceHandle": "quantumHandleGateOutput0334dbd13-0964-4820-ac3c-5954ebcdf90d",
+      "target": "75138862-3ab7-4a94-a018-0f3e30713d38",
+      "targetHandle": "quantumHandleInput275138862-3ab7-4a94-a018-0f3e30713d38",
+      "type": "quantumEdge",
+      "id": "d67eb545-b126-4454-9e5c-c0d46d75325a",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "5685d6a6-7af6-4e89-aeda-d6851d0af0d9",
+      "sourceHandle": "quantumHandleGateOutput05685d6a6-7af6-4e89-aeda-d6851d0af0d9",
+      "target": "75138862-3ab7-4a94-a018-0f3e30713d38",
+      "targetHandle": "quantumHandleInput175138862-3ab7-4a94-a018-0f3e30713d38",
+      "type": "quantumEdge",
+      "id": "917d1ef3-202e-419e-9abc-ee3152297651",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "ef7a38f7-224f-4d54-b78c-9b7d4e4fee58",
+      "sourceHandle": "quantumHandleGateOutput0ef7a38f7-224f-4d54-b78c-9b7d4e4fee58",
+      "target": "75138862-3ab7-4a94-a018-0f3e30713d38",
+      "targetHandle": "quantumHandleInput075138862-3ab7-4a94-a018-0f3e30713d38",
+      "type": "quantumEdge",
+      "id": "dc103965-5aa8-4f25-bfbf-7d55d48d71db",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "da8b0765-b5a3-4aaf-ab6e-e1b9d974bf2f",
+      "sourceHandle": "quantumHandleGateOutput0da8b0765-b5a3-4aaf-ab6e-e1b9d974bf2f",
+      "target": "334dbd13-0964-4820-ac3c-5954ebcdf90d",
+      "targetHandle": "quantumHandleGateInput0334dbd13-0964-4820-ac3c-5954ebcdf90d",
+      "type": "quantumEdge",
+      "id": "ca6dc4db-ffbe-4226-9c4e-9b996f01848d",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "7c13b55c-f1db-4276-821f-8baa2dab74bb",
+      "sourceHandle": "quantumHandleGateOutput07c13b55c-f1db-4276-821f-8baa2dab74bb",
+      "target": "5685d6a6-7af6-4e89-aeda-d6851d0af0d9",
+      "targetHandle": "quantumHandleGateInput05685d6a6-7af6-4e89-aeda-d6851d0af0d9",
+      "type": "quantumEdge",
+      "id": "14f672bc-1b87-43e5-a478-246c5041b413",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "56e95cd8-214b-4faa-ac46-4a8174d5064d",
+      "sourceHandle": "quantumHandleGateOutput056e95cd8-214b-4faa-ac46-4a8174d5064d",
+      "target": "ef7a38f7-224f-4d54-b78c-9b7d4e4fee58",
+      "targetHandle": "quantumHandleGateInput0ef7a38f7-224f-4d54-b78c-9b7d4e4fee58",
+      "type": "quantumEdge",
+      "id": "b75663a8-db97-4524-a7de-f6a723b114bd",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "2b7e8f03-7ec7-48d3-9ce1-c546568ba172",
+      "sourceHandle": "quantumHandleGateOutput02b7e8f03-7ec7-48d3-9ce1-c546568ba172",
+      "target": "da8b0765-b5a3-4aaf-ab6e-e1b9d974bf2f",
+      "targetHandle": "quantumHandleGateInput0da8b0765-b5a3-4aaf-ab6e-e1b9d974bf2f",
+      "type": "quantumEdge",
+      "id": "84071655-12d5-4f5c-b55f-7118603207d6",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "9c4730c5-bd1e-45b2-8bfa-e1497abc1bb2",
+      "sourceHandle": "quantumHandleGateOutput09c4730c5-bd1e-45b2-8bfa-e1497abc1bb2",
+      "target": "7c13b55c-f1db-4276-821f-8baa2dab74bb",
+      "targetHandle": "quantumHandleGateInput07c13b55c-f1db-4276-821f-8baa2dab74bb",
+      "type": "quantumEdge",
+      "id": "9c82930d-7371-4a69-842a-fcd79507bec7",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    },
+    {
+      "source": "0a3ff8ab-96b8-4465-8560-21e1a3f110d3",
+      "sourceHandle": "quantumHandleGateOutput00a3ff8ab-96b8-4465-8560-21e1a3f110d3",
+      "target": "56e95cd8-214b-4faa-ac46-4a8174d5064d",
+      "targetHandle": "quantumHandleGateInput056e95cd8-214b-4faa-ac46-4a8174d5064d",
+      "type": "quantumEdge",
+      "id": "59821c54-bd2c-40fe-9f13-42b9986937b6",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    }
+  ],
+  "viewport": {
+    "x": 306.5,
+    "y": 106,
+    "zoom": 1
+  }
+}

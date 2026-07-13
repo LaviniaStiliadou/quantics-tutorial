@@ -1,0 +1,135 @@
+{
+  "metadata": {
+    "version": "1.0.0",
+    "name": "My Model",
+    "description": "This is a model.",
+    "author": "",
+    "containsPlaceholder": false,
+    "id": "flow-1783942326599",
+    "timestamp": "2026-07-13T11:32:06.599Z"
+  },
+  "nodes": [
+    {
+      "id": "1665fabb-94ab-4673-a248-b5ab058f2d2e",
+      "type": "grover",
+      "position": {
+        "x": -15,
+        "y": 315
+      },
+      "selected": true,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "Grover's Search Algorithm",
+        "inputs": [],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          false,
+          true
+        ],
+        "description": "Complete Grover search with integrated Oracle and Diffuser.",
+        "icon": "PaletteIcon_GroverAlg.png",
+        "identifiers": [
+          "q964398"
+        ],
+        "inputTypes": [],
+        "outputTypes": {
+          "0": "quantum register"
+        },
+        "targetStates": "a",
+        "numQubits": 3
+      },
+      "width": 320,
+      "height": 420,
+      "positionAbsolute": {
+        "x": -15,
+        "y": 315
+      },
+      "dragging": false
+    },
+    {
+      "id": "a112bf09-a24d-4314-bfe8-b88e22569ea7",
+      "type": "measurementNode",
+      "position": {
+        "x": 585,
+        "y": 315
+      },
+      "selected": false,
+      "selectable": true,
+      "draggable": true,
+      "data": {
+        "label": "Measurement",
+        "inputs": [
+          {
+            "id": "1665fabb-94ab-4673-a248-b5ab058f2d2e",
+            "edgeId": "fa81a0fa-0cb1-4830-83f9-e610b4b1dac0",
+            "identifiers": [
+              "q964398"
+            ],
+            "targetHandle": "quantumHandleMeasurementInput0a112bf09-a24d-4314-bfe8-b88e22569ea7"
+          }
+        ],
+        "outputs": [],
+        "children": [],
+        "implementation": "",
+        "implementationType": "",
+        "uncomputeImplementationType": "",
+        "uncomputeImplementation": "",
+        "completionGuaranteed": true,
+        "compactOptions": [
+          true,
+          false
+        ],
+        "description": "Measures a quantum state and returns its classical information and collapsed quantum state.",
+        "icon": "PaletteIcon_Measurement.png",
+        "identifiers": [
+          "q964398"
+        ],
+        "indices": "",
+        "outputIdentifier": "",
+        "inputTypes": [
+          "quantum register"
+        ],
+        "outputTypes": [
+          "array",
+          "quantum register"
+        ]
+      },
+      "width": 320,
+      "height": 440,
+      "positionAbsolute": {
+        "x": 585,
+        "y": 315
+      },
+      "dragging": false
+    }
+  ],
+  "edges": [
+    {
+      "source": "1665fabb-94ab-4673-a248-b5ab058f2d2e",
+      "sourceHandle": "quantumHandlegroverOutput01665fabb-94ab-4673-a248-b5ab058f2d2e",
+      "target": "a112bf09-a24d-4314-bfe8-b88e22569ea7",
+      "targetHandle": "quantumHandleMeasurementInput0a112bf09-a24d-4314-bfe8-b88e22569ea7",
+      "type": "quantumEdge",
+      "id": "fa81a0fa-0cb1-4830-83f9-e610b4b1dac0",
+      "markerEnd": {
+        "type": "arrowclosed",
+        "width": 20,
+        "height": 20,
+        "color": "#93C5FD",
+        "hidden": false
+      }
+    }
+  ],
+  "viewport": {
+    "x": 221.5,
+    "y": -13,
+    "zoom": 1
+  }
+}

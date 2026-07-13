@@ -1,12 +1,12 @@
 ---
 
-title: Hands-On Session
+title: Hands-On Session 2
 layout: default
-navigation_weight: 3
+navigation_weight: 4
 ---
 
 
-# Hands-On Tutorial: Low-Code Quantum Application Development — From Visual Modeling to Execution
+# Hands-On Tutorial: Low-Code Quantum Application Development — From Visual Modeling to Execution Part 2
 
 This practical session guides participants through the end-to-end lifecycle of a quantum application using the Qonstruct framework. The tutorial emphasizes a **visual, model-driven quantum model**, where participants design quantum algorithms using a low-code environment and execute them via automated compilation and quantum middleware.
 
@@ -19,7 +19,7 @@ Participants will explore how high-level quantum models are transformed into exe
 The underlying framework consists of three integrated core services:
 
 * **Quantum Low-Code Modeler:** A web-based graphical workspace enabling collaborative visual modeling of quantum algorithms. It allows users to define quantum workflows at a high level of abstraction instead of manually specifying quantum circuits.
-* **Backend Transformation Service:** A compiler engine that validates visual quantum models and automatically transforms them into executable quantum circuits (OpenQASM3).
+* **Backend Transformation Service:** A compiler engine that validates visual quantum models and automatically transforms them into executable quantum circuits (OpenQASM3) or workflows.
 * **Qunicorn:** A middleware layer for orchestrating execution of quantum circuits across heterogeneous quantum cloud providers and simulators.
 
 ---
